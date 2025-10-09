@@ -9,13 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        // VStack
+        TabView {
+            Image(systemName: "applelogo")
+            // Text("Helyeim") // a PlaceListView létrehozása után eldobhatjuk
+            PlacesListView()
+                .tabItem {
+                    Image(systemName: "map.fill")
+                    Text("Helyek")
+                }
+            Text("Profilom")
+                .tabItem{
+                    Image(systemName: "person.fill")
+                    Text("Profil")
+                 }
         }
-        .padding()
+//        .padding()
     }
 }
 
@@ -24,5 +33,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-// ez nem tom mi
