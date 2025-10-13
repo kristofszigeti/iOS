@@ -41,8 +41,7 @@ struct PlacesListView: View {
                 }
             }
             .sheet(isPresented: $showingAddPlaceSheet) {
-                Text("Új hely nézet")
-                    .font(.largeTitle)
+                AddPlaceView(places: $places)
             }
         }
     }

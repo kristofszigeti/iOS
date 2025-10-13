@@ -18,7 +18,7 @@ struct ContentView: View {
                     Image(systemName: "map.fill")
                     Text("Helyek")
                 }
-            Text("Profilom")
+            ProfileView()
                 .tabItem{
                     Image(systemName: "person.fill")
                     Text("Profil")
