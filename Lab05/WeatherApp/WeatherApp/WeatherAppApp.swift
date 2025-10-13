@@ -11,7 +11,7 @@ import SwiftUI
 struct WeatherAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainWeatherView() // ez lesz az induló "view". innentől a ContentView kb nem is kell
         }
     }
 }
